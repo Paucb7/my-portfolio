@@ -3,71 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
+    <title>Lukoding Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Rosa Paulina Corona Barba</h1>
-    <p>Software Engineer</p>
+    
+    <!--# NAVBAR -->
 
-    <hr>
-    
-    <h2>Summary</h2>
-    <p>Results-driven software engineer with a strong foundation in web development and a passion for creating efficient and user-friendly applications. Proven ability to collaborate with cross-functional teams and deliver high-quality software solutions.</p>
-    
-    <hr>
-    
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor's Degree in Computer Science - Universidad de Guadalajara</li>
-    </ul>
-    <p>Graduated in 2026 | GPA: 3.8</p>
+    <nav id="navbar">
+        <div class="logo-container">
+            <h1>Lukoding</h1>
+        </div>
+        
+        <div class="links-container">
+            <ul>
+                <li><img src="./img/psyduck.gif" height="30px"><a href="#sobreMi">Sobre mi</a></li>
+                <li><img src="./img/link.gif" height="30px"><a href="#">Habilidades</a></li>
+                <li><img src=""><a href="#">Proyectos</a></li>
+                <li><a href="#">Contactame</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    
-    <hr>
-    
-    <h2>Experience</h2>
-    <ul>
-        <li>Software Engineer Intern at Certezza Infinance (2023 - 2024)
-            <ol>
-                <li>Assisted in the development of web applications using JavaScript and React.</li>
-                <li>Collaborated with cross-functional teams to define and implement new features.</li>
-            </ol>
-        </li>
-        <li>Freelancer Software Engineer (2024 - Present)
-            <ol>
-                <li>Developed and maintained web applications for various clients using modern frameworks.</li>
-                <li>Provided technical support and troubleshooting for client projects.</li>
-            </ol>
-        </li>
-    
-    </ul>
-   
-    <hr>
-    
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming Languages: JavaScript, Python, PHP</li>
-        <li>Web Technologies: HTML, CSS, React, Node.js, Vue.js, SASS</li>
-        <li>Database Management: MySQL, MongoDB, PostgreSQL</li>
-        <li>Version Control: Git, GitHub</li>
-    </ul>
+    <!--# HERO SECTION-->
 
-    <hr>
+    <section id="sobreMi">
+        <div class="container-me">
+            
+            <div class="me-parag">
+                <p>Tengo 25 años soy de Guadalajara Jalisco, México y me dedico a desarrollar paginas web modernas y funcionales.</p>
+            </div>
+           
+           
+            <div class="me-header">
+                <h2>Soy Paulina (Lukoding).  <br> Programadora Web</h2>
+            </div>
 
-    <h2>Certifications, Achievements</h2>
-    <ul>
-        <li>Certified JavaScript Developer - XYZ Institute</li>
-        <li>React Development Certification - ABC Academy</li>
-        <li>Top Performer Award - Certezza Infinance</li>
-    </ul>
 
-    <hr>
+            <div class="image-container">
+                <img src="./img/Lukoding-Logo.JPG" alt="Lukoding Logo" height="300">
+            </div>
+            
+        </div>
+    </section>
 
-    <p><a href="public/contact.html">Contact</a></p>
-    <p><a href="public/hobbies.html">Hobbies</a></p>
+
+    <!--# SKILLS SECTION -->
+
+    <section id="skills">
+
+        <div class="container-skills">
+
+            <div class="header-skills">
+                <h2>Habilidades</h2>
+            </div>
+
+            <div class="card-skill 1">
+                <div class="header-skill">
+                    <h3>Tecnologias</h3>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card-skill 2">
+                <div class="header-skill">
+                    <h3>Soft Skills</h3>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Liderazgo</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolucion de problemas</li>
+                        <li>Pensamiento critico</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="card-skill 3">
+                <div class="header-skill">
+                    <h3>Otras skills</h3>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Ser pro en videojuegos</li>
+                        <li>Morir +800 veces en Elden Ring</li>
+                        <li>No tener ningun platino</li>
+                        <li>Matar a la mosca bestia en Silksong</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+    <!-- #MY WORK SECTION-->\
+    
+    <section id="mi-trabajo">
+
+        <div class="container-work">
+            <div class="work-header">
+                <h2>Mi Trabajo</h2>
+            </div>
+
+            <div class="carrousel">
+
+                <img src="" alt="">
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--# CONTACT ME SECTION-->
+
+    <section id="contactame">
+
+        <div class="container-contact">
+
+            <div class="contact-header">
+                <h2>Contactame</h2>
+            </div>
+
+            <div class="card-contact">
+
+                <div class="card-contact-left">
+
+                    <img src="" alt="">
+                    <h4><a href="">Twitter</a></h4>
+
+                    <img src="" alt="">
+                    <h4><a href="">Instagram</a></h4>
+
+                    <img src="" alt="">
+                    <h4><a href="">LinkedIn</a></h4>
+
+                    <img src="" alt="">
+                    <h4><a href="">Lechuza Mensajera</a></h4>
+
+                </div>
+
+                <div class="card-contact-right">
+
+                    <h4>Visitame en casa!</h4>
+                    <p>Palacio de Asgard habitacion #07, en algun punto del universo G-71200</p>
+
+                </div>
+
+            </div>
+
+            <img src="./img/Lukoding-Logo.JPG" alt="" height="300">
+
+        </div>
+
+    </section>
+
+
+    <!--FOOTER SECTION-->
+
 
     <footer>
-        <p>&copy; 2024 Rosa Paulina Corona Barba. All rights reserved.</p>
+
     </footer>
+
 </body>
 </html>
