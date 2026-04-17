@@ -107,3 +107,60 @@ h1 {
     grid-column: 1;
     grid-row: 1;
 }
+
+
+h2, h3 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tecnologiasClass li {
+    color: #fff;
+    list-style: none;
+}
+
+.softSkillsClass li {
+    color: #fff;
+    list-style: none;
+}
+
+.otrasSkillsClass li {
+    color: #fff;
+    list-style: none;
+}
+
+
+/* PROYECTOS SECTION */
+
+
+/* CONTACTAME SECTION */
+
+.card-contact-left h4 a {
+    color:#879caf;
+    text-decoration: none;  
+}
+
+.card-contact-left h4 a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.card-contact-left h4 a:visited{
+    color: #f7f585;
+}
+
+.card-contact-right {
+    color: #fff;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #011324;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+    
