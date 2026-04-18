@@ -1,12 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Tiny5", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #011324;
+    background-color: #021526;
     
 }
+
+/*  "Press Start 2P"font-family for headers alternative */
 
 /* NAVBAR SECTION */
 
@@ -42,6 +44,10 @@ h1 {
 
 }
 
+#navbar h1 {
+    margin-right: 20px
+}
+
 #navbar ul {
     display: flex;
     gap: 30px;
@@ -49,15 +55,36 @@ h1 {
 }
 
 #navbar ul > li > img {
-    
+    height: 40px;
+    display: block;
+}
 
+#navbar ul > li {
+    list-style-type: none;
+    flex-basis: 100px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#navbar ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: auto;
+    font-family: inherit;
+    white-space: nowrap;
 }
 
 #navbar {
     background-color: #011324;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 /* HERO SECTION */
@@ -68,7 +95,7 @@ h1 {
 }
 
 
-.container-me {
+.container-hero {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -82,10 +109,26 @@ h1 {
     margin-bottom: 30px;
 }
 
-.me-header, .me-parag {
+.hero-header, .hero-parag {
     text-align: center;
     color: #fff;
+    font-size: 20px;
 }
+
+/* SOBRE MI SECTION */
+
+.me-header {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.me-parag {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;}
 
 
 /* SKILLS SECTION */
@@ -131,6 +174,9 @@ h2, h3 {
 
 
 /* PROYECTOS SECTION */
+
+
+
 
 
 /* CONTACTAME SECTION */
