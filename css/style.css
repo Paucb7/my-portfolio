@@ -145,10 +145,26 @@ h1 {
     grid-template-rows: 1fr 1fr;
 }
 
-
 .header-skills {
-    grid-column: 1;
+    font-size: 24px;
+    grid-column: 2;
     grid-row: 1;
+    text-align: center;
+}
+
+.tecnologiasClass {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.softSkillsClass {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.otrasSkillsClass {
+    grid-column: 3;
+    grid-row: 2;
 }
 
 
