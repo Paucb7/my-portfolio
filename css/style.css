@@ -139,11 +139,13 @@ h1 {
 
 
 #skills {
-    background: #080f1e;
-    padding: 60px 40px;
+  background: #080f1e;
+  padding: 60px 40px;
 }
 
+
 .header-skills {
+    grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -164,63 +166,137 @@ h1 {
 
 @keyframes blink { 0%, 100% { opacity: 1;} 50% { opacity: 0; }}
 
+/* grid para las skills */
+
 .container-skills {
-    display: grid;
-    grid-template: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-
-
-.tecnologiasClass {
-    grid-column: 1;
-    grid-row: 2;
-}
 
 .card-skill {
-    background-color: #47525c;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
+    background-color: #050c18;
+    border: 2px solid #1e2d4a;
+    position: relative;
+    margin-top: 16px;
+    transition: border-color 0.2s, transform 0.15s;
+}
+
+.card.skill:hover {
+    transform: translateY(-4px);
+}
+
+.tecnologiasClass { --accent: #4a9eff; }
+.softSkillsClass  { --accent: #4cff91; }
+.otrasSkillsClass { --accent: #f5c842; }
+
+
+.card-skill:hover { border-color: var(--accent); }
+.card-skill:hover .header-skill{ border-bottom-color: var(--accent); }
+.card-skill:hover .header-skill h3 { color: var(--accent); }
+
+
+
+.card-skill .sprite-pin {
+    position: absolute;
+    top: -16px;
+    left: -10px;
+    width: 38px;
+    height: 38px;
+    background: #050c18;
+    border: 2px solid #1e2d4a;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: rotate(-8deg);
+    transition: border-color 0.2s, transform 0.2s;
+    z-index: 3;
+    image-rendering: pixelated;
 }
 
-.softSkillsClass {
-    grid-column: 2;
-    grid-row: 2;
+.card-skill:hover .sprite-pin {
+    border-color: var(--accent);
+    transform: rotate(-10deg) scale(1.1);
 }
 
-.otrasSkillsClass {
-    grid-column: 3;
-    grid-row: 2;
+/* puntos macOS */
+
+.win-dots {
+    position: absolute;
+    top: -14px;
+    right: 10px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background: #050c18;
+    padding: 4px 6px;
+    border: 1px solid #1e2d4a;
+    z-index: 2;
 }
 
+.dot { width: 7px; height: 7px; border-radius: 50%; } 
+.dot-r { background: #ff5f57; }
+.dot-y { background: #febc2e; }
+.dot-g { background: #28c840; }
 
-h2, h3 {
-    color: #fff;
-    text-decoration: none;
+
+.header-skill {
+    padding: 14px 14px 10px 44px;
+    border-bottom: 1px solid #1e2d4a;
+    transition: border-color 0.2s;
 }
 
-.tecnologiasClass li {
-    color: #fff;
-    list-style: none;
+.header-skill h3 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    color: #c8dff5;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: color 0.2s;
 }
 
-.softSkillsClass li {
-    color: #fff;
-    list-style: none;
+.card-skill ul {
+    list-style: disc;
+    margin: 0;
+    padding: 14px 16px;
 }
 
-.otrasSkillsClass li {
-    color: #fff;
-    list-style: none;
+.card-skill ul li {
+    font-family: "Inter", sans-serif;
+    color: #7a9cc0;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #1e3050;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 }
 
+.card-skill ul li:last-child { border-bottom: none;}
+
+.card-skill ul li::before {
+    content: '▸';
+    color: var(--accent);
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.card-skill ul li::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        0deg, 
+        transparent, transparent, 3px,
+        rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px
+    );
+}
 
 /* PROYECTOS SECTION */
 
