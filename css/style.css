@@ -8,6 +8,10 @@ body {
     
 }
 
+p {
+    font-family: "Inter", sans-serif;
+}
+
 /*  "Press Start 2P"font-family for headers alternative */
 
 /* NAVBAR SECTION */
@@ -135,26 +139,55 @@ h1 {
 
 
 #skills {
-    margin: 0;
-    padding: 0;
-}
-
-.container-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    background: #080f1e;
+    padding: 60px 40px;
 }
 
 .header-skills {
-    font-size: 24px;
-    grid-column: 2;
-    grid-row: 1;
     text-align: center;
+    margin-bottom: 40px;
 }
+
+.header-skills h2 {
+    color: #c8dff5;
+    font-size: 28px;
+    font-family: "Press Start 2P", monospace;
+    letter-spacing: 3px;
+}
+
+/* funcionalidad para que el cursor parpadee */
+
+.header-skills h2::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 0%, 100% { opacity: 1;} 50% { opacity: 0; }}
+
+.container-skills {
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
 
 .tecnologiasClass {
     grid-column: 1;
     grid-row: 2;
+}
+
+.card-skill {
+    background-color: #47525c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .softSkillsClass {
